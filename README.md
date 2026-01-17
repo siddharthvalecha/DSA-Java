@@ -1,2 +1,3 @@
-# DSA-Java
-Data Structures &amp; Algorithms in Java
+DSA In Java
+
+This repository contains my Data Structures & Algorithms practice in Java.
