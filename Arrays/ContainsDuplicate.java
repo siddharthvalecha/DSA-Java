@@ -18,6 +18,7 @@ public class ContainsDuplicate {
     public static void main(String[] args) {
         int[] nums={1,2,3,1};
         System.out.println(containsDuplicate(nums));
+	System.out.println(hasDuplicate(nums));
     }
     
     public static boolean containsDuplicate(int[] nums) {
@@ -29,4 +30,21 @@ public class ContainsDuplicate {
         }
         return false;
     } 
+
+	public static  boolean hasDuplicate(int[] a) {
+        int n=a.length;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+                if(a[i]==a[j])
+                {
+                    return true;
+                }
+
+            }
+          
+        }
+	return false;
+}
 }
