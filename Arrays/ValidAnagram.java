@@ -1,5 +1,21 @@
-class Solution {
-    public boolean isAnagram(String s, String t) {
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package dsa;
+
+/**
+ *
+ * @author Siddharth Valecha
+ */
+public class ValidAnagram {
+
+    public static void main(String[] args) {
+        String s="carrace";
+        String t="racecar";
+        System.out.println(isAnagram(s,t));
+    }
+    public static boolean isAnagram(String s, String t) {
         int slen=s.length();
         int tlen=t.length();
         int[] freq=new int[26];
@@ -23,3 +39,5 @@ class Solution {
         return true;
     }
 }
+    
+   
