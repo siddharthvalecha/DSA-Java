@@ -31,16 +31,15 @@ public class SearchInsertPosition {
         }
 
         public static int  searchInsert(int[] nums, int target) {
-         
-        for (int i = 0; i < nums.length; i++) {
-            
-            if (nums[i] >= target) {
+        int n=nums.length;
+        int possibleRes=0;
+        for(int i=0;i<n;i++){
+            if(target==nums[i])
                 return i;
-            }
+            if(target>nums[i])
+                possibleRes=i+1;
         }
-        
-        return nums.length;
-
+        return possibleRes;
     }
 }
      
