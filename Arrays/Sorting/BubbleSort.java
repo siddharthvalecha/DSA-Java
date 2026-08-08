@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Siddharth Valecha
  */
-public class BubbleSorting {
+public class BubbleSort {
 
     /**
      * @param args the command line arguments
