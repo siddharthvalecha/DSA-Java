@@ -16,6 +16,6 @@ I am using this repo to build strong problem-solving skills for **placements and
 ##  Tech Stack
 - **Language:** Java  
 - **IDE:**  NetBeans  
-- **Platform:** LeetCode, GFG.
+- **Platform:** LeetCode, GFG, Naukri 360, Strivers A2Z DSA Sheet.
 
 
