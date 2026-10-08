@@ -29,7 +29,8 @@ public class FindMissingNumber {
         }
         int ans=missingNumber(nums);
         int ans1=missingNumberOptimal(nums);
-        System.out.println(ans+"\n"+ans1);
+         int ans2=missingNumberXor(nums);
+        System.out.println(ans+"\n"+ans1+"\n"+ans2);
         
 }
         public static int missingNumber(int[] nums) {
@@ -54,4 +55,14 @@ public class FindMissingNumber {
         }
         return expectedSum-actualSum;
     }
+        public static int missingNumberXor(int[] nums) {
+      int n=nums.length;
+        int xor=n;
+        for(int i=0;i<n;i++){
+            xor^=i;
+            xor^=nums[i];
+        }
+        return xor;
+    }
+
 }
