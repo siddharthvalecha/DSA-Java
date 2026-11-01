@@ -29,7 +29,8 @@ public class LongestConsecutiveSequence {
                 nums[i]=sc.nextInt();
         }
         int ans=longestConsecutive(nums);
-        System.out.println(ans);
+        int ans1=longestConsecutiveOptimal(nums);
+        System.out.println(ans+"\n"+ans1);
         
 }
         public static int longestConsecutive(int[] nums) {
@@ -54,6 +55,28 @@ public class LongestConsecutiveSequence {
             i++;
         }
         return maxCount;
+    }
+        
+    public static int longestConsecutiveOptimal(int[] nums) {
+        HashSet<Integer> set=new HashSet<>();
+        int n=nums.length;
+        int res=0;
+        for(int ele: nums){
+            set.add(ele);
+        }
+        for(int ele:set){
+            if(set.contains(ele-1)){
+                continue;
+            }
+            int currentLength=1;
+            int nextEle=ele+1;
+            while(set.contains(nextEle)){
+                currentLength++;
+                nextEle++;
+            }
+            res=Math.max(res,currentLength);
+        }
+        return res;
     }
 
 }
