@@ -29,8 +29,8 @@ public class FindRepeatingAndMissing {
                 nums[i]=sc.nextInt();
         }
         
-       // int[] ans=findMissingRepeatingNumbers(nums);
-       int[] ans=findMissingRepeatingNumbersOptimal(nums)
+        int[] ans=findMissingRepeatingNumbers(nums);
+      // int[] ans=findMissingRepeatingNumbersOptimal(nums)
         for(int i=0;i<ans.length;i++){
             System.out.println(ans[i]);
         }
